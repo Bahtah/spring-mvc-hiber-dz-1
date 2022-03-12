@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            background-color: red;
+            color: wheat;
+            font-size: xxx-large;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="container">
+
+        <th:block th:each="msg : ${messages}">
+            <h1 th:text="${msg}"></h1>
+        </th:block>
+
+    </div>
+</div>
+</body>
+</html>
