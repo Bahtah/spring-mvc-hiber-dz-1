@@ -22,7 +22,7 @@ public class CarDaoImp implements CarDao {
     public List<Car> getCar(int count) {
         List<Car> carList1 = new ArrayList<>();
         for (int i = 0; i <count; i++) {
-            if(count <= cars.size()){
+            if(count >= 5){
                 return cars;
             }else {
                 carList1.add(cars.get(i));
